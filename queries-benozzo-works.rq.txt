@@ -1,0 +1,4 @@
+SELECT ?painting ?title WHERE {
+?painting dbo:author dbr:Benozzo_Gozzoli .
+OPTIONAL { ?painting rdfs:label ?title . FILTER(lang(?title) = "en") }
+}
