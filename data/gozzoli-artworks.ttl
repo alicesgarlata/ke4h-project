@@ -1,1 +1,21 @@
-"for .ttl (Turtle) RDF files)"
+@prefix dc: http://purl.org/dc/elements/1.1/ .
+@prefix dcterms: http://purl.org/dc/terms/ .
+@prefix schema: http://schema.org/ .
+@prefix foaf: http://xmlns.com/foaf/0.1/ .
+@prefix owl: http://www.w3.org/2002/07/owl# .
+@prefix xsd: http://www.w3.org/2001/XMLSchema# .
+@prefix ex: http://example.org/gozzoli/ .
+
+ex:raising_of_lazarus a schema:Painting ;
+dc:title "The Raising of Lazarus"@en ;
+dcterms:creator ex:benozzo_gozzoli ;
+dcterms:created "1490-01-01"^^xsd:date ;
+schema:material "Oil on panel"@en ;
+schema:location ex:national_gallery_of_art ;
+owl:sameAs http://dbpedia.org/resource/The_Raising_of_Lazarus_(Gozzoli) .
+
+ex:benozzo_gozzoli a foaf:Person ;
+foaf:name "Benozzo Gozzoli" ;
+schema:birthDate "1421-01-01"^^xsd:date ;
+schema:deathDate "1497-10-04"^^xsd:date ;
+owl:sameAs http://dbpedia.org/resource/Benozzo_Gozzoli .
